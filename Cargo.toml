@@ -1,0 +1,28 @@
+[package]
+name = "schematicNeeded"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "schematic_needed"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+csv = "1"
+fastnbt = "2"
+flate2 = "1"
+glob = "0.3"
+phf = { version = "0.14", default-features = false }
+rayon = "1"
+rust_xlsxwriter = "0.99"
+serde = { version = "1", features = ["derive"] }
+tempfile = "3"
+
+[build-dependencies]
+phf_codegen = "0.14"
+serde_json = "1"
+
+[dev-dependencies]
+calamine = "0.36"
+serde_json = "1"
